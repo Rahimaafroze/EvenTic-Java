@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "579959768570",
+    "project_id": "java-scantic",
+    "storage_bucket": "java-scantic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579959768570:android:20bc1787540a667c9f5043",
+        "android_client_info": {
+          "package_name": "com.example.signupin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579959768570-6i8lslva8fe4538d04tc1qpogn8dsn2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOMuG9deEq3vFXJRxB3TgLz5EGiKrtKAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579959768570-6i8lslva8fe4538d04tc1qpogn8dsn2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
