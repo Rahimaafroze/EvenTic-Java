@@ -34,6 +34,8 @@ public class ScanActivity extends AppCompatActivity {
 
     MaterialButton btnScan;
 
+//    int numberOfClicks = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,8 +73,15 @@ public class ScanActivity extends AppCompatActivity {
                 intentIntegrator.setOrientationLocked(true);
                 intentIntegrator.setCaptureActivity(Capture.class);
                 intentIntegrator.initiateScan();
+
+//                TextView scanText = findViewById(R.id.resultTv);
+//                scanText.setText("Number Of Ticket Scanned is:"+numberOfClicks);
+//                numberOfClicks++;
             }
+
         });
+
+
     }
 
     void signOut(){
@@ -97,6 +106,7 @@ public class ScanActivity extends AppCompatActivity {
             builder.setTitle("Result");
             builder.setMessage(intentResult.getContents());
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     dialogInterface.dismiss();

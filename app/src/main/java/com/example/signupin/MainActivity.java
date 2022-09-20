@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     //Google SignIN
 
-    GoogleSignInOptions gso;
-    GoogleSignInClient gsc;
-    ImageView googlebtn;
+//    GoogleSignInOptions gso;
+//    GoogleSignInClient gsc;
+//    ImageView googlebtn;
 
     //Manual firebase signin
 
@@ -69,23 +69,23 @@ public class MainActivity extends AppCompatActivity {
 
 
 //Google SignIN
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
-        gsc = GoogleSignIn.getClient(this,gso);
-
-        googlebtn = findViewById(R.id.googlebtn);
-
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if(acct != null){
-            navigateToSecondActivity();
-        }
-
-
-        googlebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                signIn();
-            }
-        });
+//        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
+//        gsc = GoogleSignIn.getClient(this,gso);
+//
+//        googlebtn = findViewById(R.id.googlebtn);
+//
+//        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+//        if(acct != null){
+//            navigateToSecondActivity();
+//        }
+//
+//
+//        googlebtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                signIn();
+//            }
+//        });
 
 
     }
@@ -125,10 +125,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    void signIn(){
-        Intent signInIntent = gsc.getSignInIntent();
-        startActivityForResult(signInIntent,1000);
-    }
+//    void signIn(){
+//        Intent signInIntent = gsc.getSignInIntent();
+//        startActivityForResult(signInIntent,1000);
+//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode,Intent data) {
